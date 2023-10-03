@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %} Deniz Ozkan {% endblock%}
+{% block content %}
+<header class="masthead" style="background-image: url({{ url_for('static', filename='assets/img/home1.jpg') }})">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center align-items-center">
+            <div class="col-md-6 col-lg-6 col-xl-6">
+                <div class="site-heading">
+                    <h1>Deniz Ozkan</h1>
+                    <span class="subheading">Python Developer & Test Engineer & Java Developer</span>
+                </div>
+                <p>
+                    I am a passionate Python developer with extensive experience in building web applications and solving complex problems.
+                    I have a strong background in backend development using Python and related technologies.
+                </p>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-6 text-right">
+                <img src="static/assets/img/vesikalik.jpeg" alt="Profile Picture" class="img-fluid rounded-circle" style="width: 200px; height: 200px;">
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <p >Hi, I am Deniz. I am software engineer with 7 years hand-on experiences.
+                        I had started in my professional carrier as a Java Backend & Frontend developer for 2
+                        years and currently continious as a test engineer.My passion is to continue my career as
+                        a Python developer. My main interest is Flask and related technologies.I am naturally curious
+                        and self-motivated.</p>
+                    <p class="text-center">
+                        <a href="{{ url_for('about') }}" class="btn btn-primary"><i class="bi bi-plus-circle"></i> See More
+                        </a>
+                    </p>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <p >I graduated as a software engineer as well as my master degree was same department. Both of them
+                        was 100% in english. My master thesis was about Semantic Analysis. I also have an article about
+                        agile project tools published in a journal included in SCI.
+                        </p>
+                    <p class="text-center">
+                        <a href="{{ url_for('articles') }}" class="btn btn-primary"><i class="bi bi-plus-circle"></i> See More
+                        </a>
+                    </p>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <p >If you have a job offer or any question, please contact me! I have answered as soon as possible.
+                        </p>
+                    <p class="text-center">
+                        <a href="{{ url_for('contact') }}" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Contact Me
+                        </a>
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+{% endblock %}
+
+

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block title %} Deniz Ozkan - About Me {% endblock%}
+{% block content %}
+  <!-- Page Header-->
+        <header class="masthead" style="background-image: url({{ url_for('static', filename='assets/img/about.jpg') }})">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>About Me</h1>
+                            <span class="subheading">Python Developer & Test Engineer & Java Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                         <p>I am passionate engineer who wants to continue her professional carrier as a phyton developer. My only condition that will not change in my professional life is continuous learning.</p>
+                        <p> I have 7 years hand-on experiences as a software engineer. I have a Bachelor degree and Master Degree in Software Engineering.</p>
+                        <p>I had started in my professional carrier as a Java Backend & Frontend developer for 2 years.</p>
+                        <p>I have been working currently as a Test Engineer in defence industry for 5 years. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-4 px-lg-5">
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 justify-content-center">
+                  <div class="feature col">
+                    <div class="feature-icon bg-primary bg-gradient">
+                      <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+                    </div>
+                    <h2>Python Developer</h2>
+                    <p class="text-primary">Things I enjoyed while developing:</p>
+                    <p>Backend, Frontend, API, Data Analysis and Manipulation</p>
+                    <p class="text-primary">What I Used:</p>
+                    <ul>
+                      <li>Flask</li>
+                      <li>WTF_Form, HTML Form</li>
+                      <li>Bootstrap, Flask-Bootstrap</li>
+                      <li>HTML, CSS</li>
+                      <li>Numpy</li>
+                      <li>Matlib</li>
+                    </ul>
+                <a href="https://github.com/dozkanpython?tab=repositories" class="icon-link">
+                  See More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon bg-primary bg-gradient">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+                </div>
+                <h2>Senior Test Engineer</h2>
+                <p class="text-primary">Projects I worked on:</p>
+                <p>AGOSTA, YTDP, KBRN, DOOB, DOOB-TACTIC, ADVENT, SDDS</p>
+                <p class="text-primary">What I Used:</p>
+                <ul>
+                  <li>Selenium, POM, Cucumber</li>
+                  <li>Rest Assured</li>
+                  <li>Bootstrap, Flask-Bootstrap</li>
+                  <li>Katalon Studio</li>
+                </ul>
+                <a href="https://www.havelsan.com.tr/en/sectors/defense-and-security" class="icon-link">
+                  See More
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </a>
+              </div>
+            <div class="feature col">
+                <div class="feature-icon bg-primary bg-gradient">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+                </div>
+                <h2>Java Developer</h2>
+                <p class="text-primary">Projects I worked on:</p>
+                <p>OTV, GIB INTRANET</p>
+                <p class="text-primary">What I Used:</p>
+                <ul>
+                  <li>Java</li>
+                  <li>Java Script</li>
+                  <li>SQL</li>
+                </ul>
+                <a href="https://www.gib.gov.tr/en" class="icon-link">
+                  See More
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+        </main>
+
+</div>
+{% endblock %}
