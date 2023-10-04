@@ -48,6 +48,7 @@ def contact():
 def send_email(name, email, phone, message):
     email_msg = f"Subject: Message From Professional Portfolio\n\nName: {name}\nEmail:{email}\nPhone:{phone}\n" \
                 f"message:{message}"
+    email_msg = email_msg.encode('ascii', 'ignore').decode('ascii')
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
         connection.starttls()
         connection.login(OWN_EMAIL, OWN_PASSWORD)
