@@ -17,7 +17,7 @@ OWN_PASSWORD = os.environ.get('OWN_PASSWORD')
 class ContactForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired()])
     email = StringField('Email Adress', validators=[DataRequired(), Length(min=6, max=35)])
-    phone_number = StringField('Phone Number', validators=[Length(min=11, max=13)])
+    phone_number = StringField('Phone Number')
     message = StringField('Message', validators=[DataRequired(), Length(min=15, max=100)])
     submit = SubmitField('Send')
 
