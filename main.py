@@ -1,8 +1,8 @@
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
-from wtforms.validators import DataRequired, Length
+from wtforms import StringField, SubmitField, EmailField
+from wtforms.validators import Length, InputRequired, Email
 import smtplib
 import os
 
@@ -15,10 +15,10 @@ OWN_PASSWORD = os.environ.get('OWN_PASSWORD')
 
 
 class ContactForm(FlaskForm):
-    name = StringField('Name', validators=[DataRequired()])
-    email = StringField('Email Adress', validators=[DataRequired(), Length(min=6, max=35)])
+    name = StringField('Name', validators=[InputRequired("Please enter your name.")])
+    email = EmailField("Email Address", validators=[InputRequired("Please enter your email address."), Email("Please enter your email address.")])
     phone_number = StringField('Phone Number')
-    message = StringField('Message', validators=[DataRequired(), Length(min=15, max=100)])
+    message = StringField('Message', validators=[InputRequired("Please enter your message"), Length(min=15, max=100)])
     submit = SubmitField('Send')
 
 
