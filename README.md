@@ -24,3 +24,11 @@
 - **Deploy Your Project:**
     Create a web service and change the start command:
    <div align="center"><img src="example-render.gif" alt="GIF showing web service creation on render." /></div>
+
+## Endpoints
+|Route |Usage |
+| :-:  | :-: |
+|`/ `  | For Home page|
+|`/about`  | For General Information About My Professional Life|
+|`/articles`  | For Information About My Publication|
+|`/contact`  | For Getting Touch with POST request via SMTPlib|
