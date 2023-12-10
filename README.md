@@ -19,7 +19,8 @@
 
 - **Change** 'FLASK_KEY', 'OWN_EMAIL', 'OWN_PASSWORD' with your **own**.
 
-- **Create** an account on render.com simply by signing up [via Github.](https://dashboard.render.com/login
+- **Create** an account on render.com simply by signing up [via Github.](https://dashboard.render.com/login)
 
 - **Deploy Your Project:**
-    Create a web service and change the start command: 
+    Create a web service and change the start command:
+   <div align="center"><img src="example-render.gif" alt="GIF showing web service creation on render." /></div>
