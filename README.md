@@ -17,7 +17,7 @@
   pip install -r requirements.txt
   ```
 
-- **Change** 'FLASK_KEY', 'OWN_EMAIL', 'OWN_PASSWORD' with your **own**.
+- **Set Environment Variables:** Ensure you have the required environment variables set, such as 'FLASK_KEY', 'OWN_EMAIL', 'OWN_PASSWORD' with your **own**.
 
 - **Create** an account on render.com simply by signing up [via Github.](https://dashboard.render.com/login)
 
